@@ -1,0 +1,177 @@
+/**** Forum Css File ****/
+/**** General ****/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+	font-family: Arial;
+	font-weight: normal;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+::selection, ::-moz-selection {
+	background: rgb(255, 57, 57);
+}
+
+::-moz-selection {
+	background: rgb(255, 57, 57);
+}
+
+.title /* h1 */ {
+	font-family: 'Archivo Black';
+}
+
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.fade-in {
+		-webkit-animation: fadeIn 750ms;
+}
+
+@keyframes fadeIn {
+		from {
+				opacity: 0;
+		}
+		
+		to {
+				opacity: 1;
+		}
+}
+
+
+
+/**** Header & Navigation ****/
+.main-header {
+	width: 100%;
+	background-color: #202020;
+	border-bottom: 2px solid red;
+}
+
+.main-header::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.header-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.logo {
+	color: white;
+	float: left;
+	font-size: 2.4em;
+	line-height: 80px;
+	font-family: "Archivo Black";
+	text-decoration: none;
+	transition: 250ms;
+}
+
+.main-nav {
+	float: right;
+	background-color: #2b2b2b;
+	border-radius: 5px;
+}
+
+.main-nav ul li {
+	display: inline-block;
+}
+
+.main-nav ul li a {
+	padding: 0 25px;
+	color: white;
+	line-height: 80px;
+	font-size: 1.2em;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 250ms;
+}
+
+.main-nav li:hover a {
+	color: red;
+	text-decoration: none;
+}
+
+
+
+/**** Splash/Main Heading ****/
+.main-heading {
+	background-image: url('../img/kha.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 75vh;
+	border-bottom: 3px solid red;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0px 5px 10px #888888;
+}
+
+.main-heading h1 {
+	color: white;
+	text-shadow: 4px 4px 2px black;
+	font-size: 7em;
+	font-family: "Archivo Black";
+	font-weight: normal;
+}
+
+.main-heading p {
+	color: white;
+	font-size: 2em;
+	padding: 15px 0 35px 0;
+	font-family: "Archivo Black";
+	text-shadow: 4px 4px 2px black;
+}
+
+.main-heading a {
+	color: white;
+	border: 1px solid red;
+	background-color: #202020;
+	border-radius: 5px;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-shadow: 2px 2px 1px black;
+	text-decoration: none;
+	font-family: "Archivo Black";
+	font-size: 1.4em;
+	transition: 250ms;
+}
+
+.main-heading a:hover {
+	color: limegreen;
+}
+
+
+
+/**** Footer ****/
+.main-footer {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	background-color: #202020;
+	border-top: 2px solid red;
+}
+
+.main-footer p {
+	color: white;
+	margin: 10px;
+	font-style: italic;
+}
+
+.main-footer a {
+	color: red;
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 10px;
+}
